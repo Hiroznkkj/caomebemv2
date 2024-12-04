@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Akira';
+    src: url('./font/Akira\ Expanded\ Demo.otf') format('opentype');
+    font-weight: normal; /* ou bold */
+    font-style: normal;  /* ou italic */
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.principal {
+    background-color: blanchedalmond;
+    margin: 1em;
+    display: grid;
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    justify-content: center; /* Centraliza o grid horizontalmente na seção */
+    grid-template-columns: 1fr 1fr; /* Divide a área em duas colunas iguais */
+}
+
+.titulo__akira {
+    font-family: 'Akira';
+    font-size: 10vw;
+    line-height: 0.7;
+    direction: rtl;
+    display: block;
+    text-align: right; /* Alinha o texto à direita */
+    color:#13501B;
+}
+
+.imagem__principal {
+    width: 40vw; /* Controla o tamanho da imagem */
+    justify-self: center; /* Centraliza a imagem horizontalmente na coluna */
+    position: relative;
+    right: 5vw;
+}
+
+.logotipo__titulo {
+    height: 20vw;
+    position: absolute; 
+    top: 30vw; 
+    left: 10%; 
+    transform: translateX(50%); /* alinhamento filhadaputa */
+}
+
+.principal p {
+    font-size: 2vw;
+    line-height: 1;
+}
+
+.logotipo__principal {
+    position: fixed;
+    right: -10vh;
+    bottom: -20%;
+    transform: rotate(280deg);
+    height: 45%;
+}
